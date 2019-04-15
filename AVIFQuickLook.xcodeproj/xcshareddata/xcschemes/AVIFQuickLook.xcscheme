@@ -65,11 +65,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-c"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "public.avif"
+            argument = "-d2"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

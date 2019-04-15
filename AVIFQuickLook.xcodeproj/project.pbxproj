@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324706AE2264C44C005B2791 /* AVIF.app in Resources */ = {isa = PBXBuildFile; fileRef = 324706AD2264C44C005B2791 /* AVIF.app */; };
 		32581D442264588300E36BB6 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */; };
 		32581D462264588300E36BB6 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D452264588300E36BB6 /* GeneratePreviewForURL.m */; };
 		32581D482264588300E36BB6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32581D472264588300E36BB6 /* main.c */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324706AD2264C44C005B2791 /* AVIF.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = AVIF.app; sourceTree = "<group>"; };
 		32581D402264588300E36BB6 /* AVIFQuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVIFQuickLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		32581D452264588300E36BB6 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -44,11 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324706AC2264C44C005B2791 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				324706AD2264C44C005B2791 /* AVIF.app */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		32581D362264588300E36BB6 = {
 			isa = PBXGroup;
 			children = (
 				32581D4F22645C5D00E36BB6 /* AVIFDecoder */,
 				32581D422264588300E36BB6 /* AVIFQuickLook */,
+				324706AC2264C44C005B2791 /* App */,
 				32581D412264588300E36BB6 /* Products */,
 				32581D5422645F8B00E36BB6 /* Frameworks */,
 			);
@@ -160,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324706AE2264C44C005B2791 /* AVIF.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

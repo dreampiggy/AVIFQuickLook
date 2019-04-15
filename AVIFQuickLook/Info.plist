@@ -12,7 +12,6 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>public.avif</string>
-				<string>dyn.ah62d4rv4ge80c7xmq2</string>
 			</array>
 		</dict>
 	</array>
@@ -58,13 +57,12 @@
 	<false/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
-    <key>UTExportedTypeDeclarations</key>
+    <key>UTImportedTypeDeclarations</key>
     <array>
         <dict>
             <key>UTTypeConformsTo</key>
             <array>
                 <string>public.image</string>
-                <string>public.data</string>
             </array>
             <key>UTTypeDescription</key>
             <string>AVIF image</string>
