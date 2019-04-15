@@ -1,0 +1,12 @@
+language: objective-c
+script:
+  - xcodebuild -project AVIFQuickLook.xcodeproj -target AVIFQuickLook
+  - mv build/Release/AVIFQuickLook.qlgenerator .
+  - zip -r AVIFQuickLook.qlgenerator.zip AVIFQuickLook.qlgenerator
+deploy:
+  provider: releases
+  file:
+    - AVIFQuickLook.qlgenerator.zip
+  skip_cleanup: true
+  on:
+    tags: true
