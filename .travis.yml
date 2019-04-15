@@ -1,12 +1,16 @@
 language: objective-c
+osx_image: xcode10
 script:
   - xcodebuild -project AVIFQuickLook.xcodeproj -target AVIFQuickLook
   - mv build/Release/AVIFQuickLook.qlgenerator .
   - zip -r AVIFQuickLook.qlgenerator.zip AVIFQuickLook.qlgenerator
 deploy:
   provider: releases
-  file:
-    - AVIFQuickLook.qlgenerator.zip
+  api_key:
+    secure: aXQkSQRAwMpooR3TnJgDf9hVleIY6bpaSRwWsnLYmwYX8G0dD9SfOU9QKb7acme9dfrUgfBXkJAbr/UtEVI+YywQzdCvIUrnja/yS1hHcqgvvvysYop27Iik3N4zNgRBENmdrsIGsuvo1MMfZDYaiZ0ZqeU485mxBUaYj0dkIZvlbT/lclsu+kROZZmbuJBkrDZORbOFX/PZjgEalZz3Iq7ioa5ay0dh/ylTo4fNcxWDO5sIfRGWp4DwS6Nmd9bgH6OYyHEtukDpEm+CvdN7sZV3VBWaoLfdBcxtbgw3nmErRGsAmDuXseoiNtCD3E48eqW/DZJG7zTcy7ES8/qdzj/bCj25lJ2neN+RTTM5tAc9AWeU4zUtGAwqnXz0061IVy1ddwafNpfeMHXiBMsiE54lOe/MLsliJzaPQSP/tC9W4kRhCTnnTZBSS9uU3dcD3RPdv1EMVi673kO/Ui5lDUsiLlQgX+Wo5UNM9zwveF3IfHx73ixZcYtWi/8PyS0XleDZwFVZJzgha7XWJQrkXLz7bnbyMrT300Ipt8FIZsRUkAbVw+75jCXrYlN/3qcdcfgtPGJvKPWxojVIfVwmL34Fjb7+J0k0uU5VILoI/CeGHZ/K9hJCqiLioAiLaT/p4LgdOhElKuGXy7+zDM1S+pMqBcGRlyL/ykgoOTZx4fA=
+  file: AVIFQuickLook.qlgenerator.zip
   skip_cleanup: true
   on:
     tags: true
+notifications:
+  email: false

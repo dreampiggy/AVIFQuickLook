@@ -1,14 +1,14 @@
 # AVIFQuickLook
 
-![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat) [![Build Status](https://travis-ci.com/dreampiggy/AVIFQuickLook.svg?branch=master)](https://travis-ci.com/dreampiggy/AVIFQuickLook)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat) [![Build Status](https://travis-ci.org/dreampiggy/AVIFQuickLook.svg?branch=master)](https://travis-ci.org/dreampiggy/AVIFQuickLook) 
 
 This is the **macOS QuickLook** plugin for [AVIF (AV1 Image File Format)](https://aomediacodec.github.io/av1-avif/).
 
-## Quick Look the image
+## Generate Finder thumbnails
 
 ![](https://raw.githubusercontent.com/dreampiggy/AVIFQuickLook/master/Screenshot/Thumbnails.png)
 
-## Generate Finder thumbnails
+## QuickLook the image
 
 ![](https://raw.githubusercontent.com/dreampiggy/AVIFQuickLook/master/Screenshot/Preview.png)
 
