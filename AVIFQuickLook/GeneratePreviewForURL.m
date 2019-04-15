@@ -31,8 +31,6 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         // Add image dimensions to title
         NSString *newTitle = [NSString stringWithFormat:@"%@ (%d x %d)", [path lastPathComponent], (int)width, (int)height];
         
-        //        NSLog(@"Options: %@", [(__bridge NSDictionary *)options description]);
-        
         NSDictionary *newOpt = @{   (NSString *)kQLPreviewPropertyDisplayNameKey : newTitle,
             (NSString *)kQLPreviewPropertyWidthKey : @(width),
             (NSString *)kQLPreviewPropertyHeightKey : @(height) };
