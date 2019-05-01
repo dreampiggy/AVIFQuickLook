@@ -56,7 +56,7 @@
 		<key>bundleDividerCollapsed</key>
 		<true/>
 		<key>bundlePositionOfDivider</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
@@ -78,7 +78,31 @@
 				<string>public.image</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>AVIF image</string>
+			<string>AVIF Image</string>
+			<key>UTTypeIdentifier</key>
+			<string>public.avif</string>
+			<key>UTTypeReferenceURL</key>
+			<string>https://aomediacodec.github.io/av1-avif/</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>avif</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>image/avif</string>
+			</dict>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.image</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>AVIF Image</string>
 			<key>UTTypeIdentifier</key>
 			<string>public.avif</string>
 			<key>UTTypeReferenceURL</key>
