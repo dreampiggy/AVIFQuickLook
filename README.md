@@ -22,13 +22,13 @@ These images are from [AVIF Specification Test Files](https://github.com/AOMedia
 
 1. Grab the latest `AVIFQuickLook.qlgenerator` from the [Release Page](https://github.com/dreampiggy/AVIFQuickLook/releases/latest), or build using Xcode.
 2. Open Finder
-3. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter
+3. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter. For macOS Catalina above, use `/Library/QuickLook/` instead.
 4. Drag `AVIFQuickLook.qlgenerator` into this folder. You may need to enter the password
 
 ## Uninstall
 
 1. Open Finder
-2. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter
+2. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter. For macOS Catalina above, use `/Library/QuickLook/` instead.
 3. Delete `AVIFQuickLook.qlgenerator`
 
 ## Author
