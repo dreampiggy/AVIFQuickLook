@@ -31,6 +31,16 @@ These images are from [AVIF Specification Test Files](https://github.com/AOMedia
 2. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter. For macOS Catalina above, use `/Library/QuickLook/` instead.
 3. Delete `AVIFQuickLook.qlgenerator`
 
+## For macOS Big Sur+
+
+If you face the issue that the AVIF preview is blank, please try running the following command:
+
+```
+xattr -d -r com.apple.quarantine ~/Library/QuickLook/AVIFQuickLook.qlgenerator
+```
+
+Note the path is where you put the `AVIFQuickLook.qlgenerator`
+
 ## Author
 
 DreamPiggy, lizhuoli1126@126.com

@@ -308,6 +308,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependency/include";
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
@@ -327,6 +328,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependency/include";
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
