@@ -3,23 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		324706AE2264C44C005B2791 /* AVIF.app in Resources */ = {isa = PBXBuildFile; fileRef = 324706AD2264C44C005B2791 /* AVIF.app */; };
+		3253D80228267E2B0011C134 /* libavif in Frameworks */ = {isa = PBXBuildFile; productRef = 3253D80128267E2B0011C134 /* libavif */; };
+		3253D81D28267FDD0011C134 /* ColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253D81928267FDD0011C134 /* ColorSpace.m */; };
+		3253D81E28267FDD0011C134 /* Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253D81A28267FDD0011C134 /* Conversion.m */; };
+		3253D81F28267FDD0011C134 /* Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 3253D81B28267FDD0011C134 /* Conversion.h */; };
+		3253D82028267FDD0011C134 /* ColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3253D81C28267FDD0011C134 /* ColorSpace.h */; };
 		32581D442264588300E36BB6 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */; };
 		32581D462264588300E36BB6 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D452264588300E36BB6 /* GeneratePreviewForURL.m */; };
 		32581D482264588300E36BB6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32581D472264588300E36BB6 /* main.c */; };
 		32581D5222645C6D00E36BB6 /* AVIFDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 32581D5022645C6D00E36BB6 /* AVIFDecoder.h */; };
 		32581D5322645C6D00E36BB6 /* AVIFDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D5122645C6D00E36BB6 /* AVIFDecoder.m */; };
-		32581D5822645F8B00E36BB6 /* libaom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32581D5522645F8B00E36BB6 /* libaom.a */; };
-		32581D5922645F8B00E36BB6 /* libavif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32581D5622645F8B00E36BB6 /* libavif.a */; };
-		32581D5A22645F8B00E36BB6 /* libgb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32581D5722645F8B00E36BB6 /* libgb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		324706AD2264C44C005B2791 /* AVIF.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = AVIF.app; sourceTree = "<group>"; };
+		3253D81928267FDD0011C134 /* ColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSpace.m; sourceTree = "<group>"; };
+		3253D81A28267FDD0011C134 /* Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversion.m; sourceTree = "<group>"; };
+		3253D81B28267FDD0011C134 /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversion.h; sourceTree = "<group>"; };
+		3253D81C28267FDD0011C134 /* ColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSpace.h; sourceTree = "<group>"; };
 		32581D402264588300E36BB6 /* AVIFQuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVIFQuickLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		32581D452264588300E36BB6 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -27,9 +33,6 @@
 		32581D492264588300E36BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32581D5022645C6D00E36BB6 /* AVIFDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVIFDecoder.h; sourceTree = "<group>"; };
 		32581D5122645C6D00E36BB6 /* AVIFDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVIFDecoder.m; sourceTree = "<group>"; };
-		32581D5522645F8B00E36BB6 /* libaom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaom.a; path = Dependency/lib/libaom.a; sourceTree = "<group>"; };
-		32581D5622645F8B00E36BB6 /* libavif.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavif.a; path = Dependency/lib/libavif.a; sourceTree = "<group>"; };
-		32581D5722645F8B00E36BB6 /* libgb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgb.a; path = Dependency/lib/libgb.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32581D5822645F8B00E36BB6 /* libaom.a in Frameworks */,
-				32581D5922645F8B00E36BB6 /* libavif.a in Frameworks */,
-				32581D5A22645F8B00E36BB6 /* libgb.a in Frameworks */,
+				3253D80228267E2B0011C134 /* libavif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +90,10 @@
 			children = (
 				32581D5022645C6D00E36BB6 /* AVIFDecoder.h */,
 				32581D5122645C6D00E36BB6 /* AVIFDecoder.m */,
+				3253D81C28267FDD0011C134 /* ColorSpace.h */,
+				3253D81928267FDD0011C134 /* ColorSpace.m */,
+				3253D81B28267FDD0011C134 /* Conversion.h */,
+				3253D81A28267FDD0011C134 /* Conversion.m */,
 			);
 			path = AVIFDecoder;
 			sourceTree = "<group>";
@@ -96,9 +101,6 @@
 		32581D5422645F8B00E36BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32581D5522645F8B00E36BB6 /* libaom.a */,
-				32581D5622645F8B00E36BB6 /* libavif.a */,
-				32581D5722645F8B00E36BB6 /* libgb.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +112,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3253D81F28267FDD0011C134 /* Conversion.h in Headers */,
+				3253D82028267FDD0011C134 /* ColorSpace.h in Headers */,
 				32581D5222645C6D00E36BB6 /* AVIFDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +135,9 @@
 			dependencies = (
 			);
 			name = AVIFQuickLook;
+			packageProductDependencies = (
+				3253D80128267E2B0011C134 /* libavif */,
+			);
 			productName = AVIFQuickLook;
 			productReference = 32581D402264588300E36BB6 /* AVIFQuickLook.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
@@ -157,6 +164,9 @@
 				en,
 			);
 			mainGroup = 32581D362264588300E36BB6;
+			packageReferences = (
+				3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */,
+			);
 			productRefGroup = 32581D412264588300E36BB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,7 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32581D5322645C6D00E36BB6 /* AVIFDecoder.m in Sources */,
+				3253D81D28267FDD0011C134 /* ColorSpace.m in Sources */,
 				32581D442264588300E36BB6 /* GenerateThumbnailForURL.m in Sources */,
+				3253D81E28267FDD0011C134 /* Conversion.m in Sources */,
 				32581D462264588300E36BB6 /* GeneratePreviewForURL.m in Sources */,
 				32581D482264588300E36BB6 /* main.c in Sources */,
 			);
@@ -309,13 +321,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7W77QXGX2;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependency/include";
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Dependency/lib",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AVIFQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,13 +336,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7W77QXGX2;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Dependency/include";
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Dependency/lib",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AVIFQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/libavif-Xcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3253D80128267E2B0011C134 /* libavif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */;
+			productName = libavif;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32581D372264588300E36BB6 /* Project object */;
 }
