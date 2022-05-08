@@ -18,7 +18,19 @@ These images are from [AVIF Specification Test Files](https://github.com/AOMedia
 
 + macOS 10.10+
 
+## Build
+
++ Xcode 12+ (Swift Package Manager)
+
 ## Install
+
+### Homebrew Cask (New!)
+
+```
+brew install avifquicklook
+```
+
+### Manual
 
 1. Grab the latest `AVIFQuickLook.qlgenerator` from the [Release Page](https://github.com/dreampiggy/AVIFQuickLook/releases/latest), or build using Xcode.
 2. Open Finder
@@ -26,6 +38,14 @@ These images are from [AVIF Specification Test Files](https://github.com/AOMedia
 4. Drag `AVIFQuickLook.qlgenerator` into this folder. You may need to enter the password
 
 ## Uninstall
+
+### Homebrew Cask (New!)
+
+```
+brew uninstall avifquicklook
+```
+
+### Manual
 
 1. Open Finder
 2. `Shift + Command + G`, input `~/Library/QuickLook/` and press Enter. For macOS Catalina above, use `/Library/QuickLook/` instead.
@@ -51,6 +71,8 @@ This project is released under the *MIT license*, see **LICENSE**.
 
 ## Thanks
 
-+ [libavif](https://github.com/joedrago/avif)
++ [libavif](https://github.com/AOMediaCodec/libavif)
 + [aom](https://aomedia.googlesource.com/aom/)
++ [SDWebImageAVIFCoder](https://github.com/SDWebImage/SDWebImageAVIFCoder)
++ [Homebrew Cask](https://github.com/Homebrew/homebrew-cask)
 
