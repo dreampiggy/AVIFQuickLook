@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/libavif-Xcode.git",
       "state" : {
-        "revision" : "218c03f0a1bda570dc650e26a4daf87351ab28a3",
-        "version" : "0.9.2"
+        "revision" : "a158cb024166f8c599f88f8c91458c59922bcb0f",
+        "version" : "0.11.1"
       }
     },
     {
@@ -23,8 +23,26 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/libvmaf-Xcode.git",
       "state" : {
-        "revision" : "26544e92506764862358ce2198ddab9af7685ed5",
-        "version" : "2.2.0"
+        "revision" : "41db5dc11d05c02d1aca7de0b572a068f528c37c",
+        "version" : "2.3.1"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "633996a807442ec28df9d33b0f88ce57a0e2fdbf",
+        "version" : "5.17.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageavifcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageAVIFCoder.git",
+      "state" : {
+        "revision" : "989e4b6ad18200644956ba2a908cb7d939878690",
+        "version" : "0.10.1"
       }
     }
   ],

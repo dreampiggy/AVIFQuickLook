@@ -1,7 +1,7 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
-#import "AVIFDecoder.h"
+#import "SDImageAVIFCoder.h"
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options);
 void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
@@ -18,7 +18,9 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     @autoreleasepool {
         
         NSString *path = [(__bridge NSURL *)url path];
-        CGImageRef cgImgRef = [AVIFDecoder createAVIFImageAtPath:path];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        UIImage *image = [SDImageAVIFCoder.sharedCoder decodedImageWithData:data options:nil];
+        CGImageRef cgImgRef = image.CGImage;
         
         if (cgImgRef == NULL) {
             QLPreviewRequestSetURLRepresentation(preview, url, contentTypeUTI, nil);
@@ -41,7 +43,6 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         QLPreviewRequestFlushContext(preview, ctx);
         
         // Cleanup
-        CGImageRelease(cgImgRef);
         CGContextRelease(ctx);
         
     }

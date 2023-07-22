@@ -16,11 +16,18 @@ These images are from [AVIF Specification Test Files](https://github.com/AOMedia
 
 ## Requirements
 
-+ macOS 10.10+
++ macOS 10.11+ (Big Sur+)
++ M1/Intel Mac are both supported
 
 ## Build
 
-+ Xcode 12+ (Swift Package Manager)
++ Xcode 13+
++ CocoaPods 1.11+
+
+```
+pod install
+open AVIFQuickLook.xcworkspace
+```
 
 ## Install
 
