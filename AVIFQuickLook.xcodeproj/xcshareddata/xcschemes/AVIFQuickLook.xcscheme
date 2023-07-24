@@ -56,10 +56,30 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-p"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-t"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "~/Downloads/test.avif"
+            argument = "~/Downloads/example.avif"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-c"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "public.avif"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-g"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

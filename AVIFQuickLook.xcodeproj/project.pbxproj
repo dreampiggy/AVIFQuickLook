@@ -3,36 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9EFD1FCFA47D99C16187F8 /* libPods-AVIFQuickLook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B58BD319084104314EF3D3 /* libPods-AVIFQuickLook.a */; };
 		324706AE2264C44C005B2791 /* AVIF.app in Resources */ = {isa = PBXBuildFile; fileRef = 324706AD2264C44C005B2791 /* AVIF.app */; };
-		3253D80228267E2B0011C134 /* libavif in Frameworks */ = {isa = PBXBuildFile; productRef = 3253D80128267E2B0011C134 /* libavif */; };
-		3253D81D28267FDD0011C134 /* ColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253D81928267FDD0011C134 /* ColorSpace.m */; };
-		3253D81E28267FDD0011C134 /* Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253D81A28267FDD0011C134 /* Conversion.m */; };
-		3253D81F28267FDD0011C134 /* Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 3253D81B28267FDD0011C134 /* Conversion.h */; };
-		3253D82028267FDD0011C134 /* ColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3253D81C28267FDD0011C134 /* ColorSpace.h */; };
 		32581D442264588300E36BB6 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */; };
 		32581D462264588300E36BB6 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D452264588300E36BB6 /* GeneratePreviewForURL.m */; };
 		32581D482264588300E36BB6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32581D472264588300E36BB6 /* main.c */; };
-		32581D5222645C6D00E36BB6 /* AVIFDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 32581D5022645C6D00E36BB6 /* AVIFDecoder.h */; };
-		32581D5322645C6D00E36BB6 /* AVIFDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32581D5122645C6D00E36BB6 /* AVIFDecoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11B58BD319084104314EF3D3 /* libPods-AVIFQuickLook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVIFQuickLook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324706AD2264C44C005B2791 /* AVIF.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = AVIF.app; sourceTree = "<group>"; };
-		3253D81928267FDD0011C134 /* ColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSpace.m; sourceTree = "<group>"; };
-		3253D81A28267FDD0011C134 /* Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversion.m; sourceTree = "<group>"; };
-		3253D81B28267FDD0011C134 /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversion.h; sourceTree = "<group>"; };
-		3253D81C28267FDD0011C134 /* ColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSpace.h; sourceTree = "<group>"; };
 		32581D402264588300E36BB6 /* AVIFQuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVIFQuickLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		32581D432264588300E36BB6 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		32581D452264588300E36BB6 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		32581D472264588300E36BB6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		32581D492264588300E36BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32581D5022645C6D00E36BB6 /* AVIFDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVIFDecoder.h; sourceTree = "<group>"; };
-		32581D5122645C6D00E36BB6 /* AVIFDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVIFDecoder.m; sourceTree = "<group>"; };
+		70DC7653EF061E8A819AF0A2 /* Pods-AVIFQuickLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVIFQuickLook.debug.xcconfig"; path = "Target Support Files/Pods-AVIFQuickLook/Pods-AVIFQuickLook.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C7E43A268AD16C5778F6DC /* Pods-AVIFQuickLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVIFQuickLook.release.xcconfig"; path = "Target Support Files/Pods-AVIFQuickLook/Pods-AVIFQuickLook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3253D80228267E2B0011C134 /* libavif in Frameworks */,
+				2D9EFD1FCFA47D99C16187F8 /* libPods-AVIFQuickLook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +49,11 @@
 		32581D362264588300E36BB6 = {
 			isa = PBXGroup;
 			children = (
-				32581D4F22645C5D00E36BB6 /* AVIFDecoder */,
 				32581D422264588300E36BB6 /* AVIFQuickLook */,
 				324706AC2264C44C005B2791 /* App */,
 				32581D412264588300E36BB6 /* Products */,
 				32581D5422645F8B00E36BB6 /* Frameworks */,
+				CB35FFFD7654246E3FFF83D5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,24 +76,21 @@
 			path = AVIFQuickLook;
 			sourceTree = "<group>";
 		};
-		32581D4F22645C5D00E36BB6 /* AVIFDecoder */ = {
-			isa = PBXGroup;
-			children = (
-				32581D5022645C6D00E36BB6 /* AVIFDecoder.h */,
-				32581D5122645C6D00E36BB6 /* AVIFDecoder.m */,
-				3253D81C28267FDD0011C134 /* ColorSpace.h */,
-				3253D81928267FDD0011C134 /* ColorSpace.m */,
-				3253D81B28267FDD0011C134 /* Conversion.h */,
-				3253D81A28267FDD0011C134 /* Conversion.m */,
-			);
-			path = AVIFDecoder;
-			sourceTree = "<group>";
-		};
 		32581D5422645F8B00E36BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11B58BD319084104314EF3D3 /* libPods-AVIFQuickLook.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB35FFFD7654246E3FFF83D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DC7653EF061E8A819AF0A2 /* Pods-AVIFQuickLook.debug.xcconfig */,
+				E0C7E43A268AD16C5778F6DC /* Pods-AVIFQuickLook.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,9 +100,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3253D81F28267FDD0011C134 /* Conversion.h in Headers */,
-				3253D82028267FDD0011C134 /* ColorSpace.h in Headers */,
-				32581D5222645C6D00E36BB6 /* AVIFDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32581D4C2264588300E36BB6 /* Build configuration list for PBXNativeTarget "AVIFQuickLook" */;
 			buildPhases = (
+				81B271E4408AEEA4590B3ACE /* [CP] Check Pods Manifest.lock */,
 				32581D3B2264588300E36BB6 /* Headers */,
 				32581D3C2264588300E36BB6 /* Sources */,
 				32581D3D2264588300E36BB6 /* Frameworks */,
@@ -136,7 +122,6 @@
 			);
 			name = AVIFQuickLook;
 			packageProductDependencies = (
-				3253D80128267E2B0011C134 /* libavif */,
 			);
 			productName = AVIFQuickLook;
 			productReference = 32581D402264588300E36BB6 /* AVIFQuickLook.qlgenerator */;
@@ -165,7 +150,6 @@
 			);
 			mainGroup = 32581D362264588300E36BB6;
 			packageReferences = (
-				3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */,
 			);
 			productRefGroup = 32581D412264588300E36BB6 /* Products */;
 			projectDirPath = "";
@@ -187,15 +171,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81B271E4408AEEA4590B3ACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVIFQuickLook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32581D3C2264588300E36BB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32581D5322645C6D00E36BB6 /* AVIFDecoder.m in Sources */,
-				3253D81D28267FDD0011C134 /* ColorSpace.m in Sources */,
 				32581D442264588300E36BB6 /* GenerateThumbnailForURL.m in Sources */,
-				3253D81E28267FDD0011C134 /* Conversion.m in Sources */,
 				32581D462264588300E36BB6 /* GeneratePreviewForURL.m in Sources */,
 				32581D482264588300E36BB6 /* main.c in Sources */,
 			);
@@ -317,13 +323,14 @@
 		};
 		32581D4D2264588300E36BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DC7653EF061E8A819AF0A2 /* Pods-AVIFQuickLook.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AVIFQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -332,13 +339,14 @@
 		};
 		32581D4E2264588300E36BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C7E43A268AD16C5778F6DC /* Pods-AVIFQuickLook.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = AVIFQuickLook/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AVIFQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -367,25 +375,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/libavif-Xcode.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3253D80128267E2B0011C134 /* libavif */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3253D80028267E2B0011C134 /* XCRemoteSwiftPackageReference "libavif-Xcode" */;
-			productName = libavif;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32581D372264588300E36BB6 /* Project object */;
 }

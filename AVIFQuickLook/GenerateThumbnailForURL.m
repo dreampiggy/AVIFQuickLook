@@ -1,7 +1,7 @@
 #include <CoreFoundation/CoreFoundation.h>
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
-#import "AVIFDecoder.h"
+#import "SDImageAVIFCoder.h"
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize);
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail);
@@ -18,10 +18,11 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
     @autoreleasepool {
         
         NSString *path = [(__bridge NSURL *)url path];
-        CGImageRef cgImgRef = [AVIFDecoder createAVIFImageAtPath:path];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        UIImage *image = [SDImageAVIFCoder.sharedCoder decodedImageWithData:data options:nil];
+        CGImageRef cgImgRef = image.CGImage;
         if (cgImgRef) {
             QLThumbnailRequestSetImage(thumbnail, cgImgRef, nil);
-            CGImageRelease(cgImgRef);
         } else {
             QLThumbnailRequestSetImageAtURL(thumbnail, url, nil);
         }
