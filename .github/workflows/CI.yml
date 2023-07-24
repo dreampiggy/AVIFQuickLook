@@ -1,0 +1,52 @@
+name: "AVIFQuickLook CI"
+
+on:
+  push:
+    # Pattern matched against refs/tags
+    tags:        
+      - '*'
+
+permissions:
+  contents: read
+
+jobs:
+  Build:
+    name: Build App
+    runs-on: macos-11
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Cocoapods
+        run: gem install cocoapods --no-document --quiet
+        
+      - name: Install Xcpretty
+        run: gem install xcpretty --no-document --quiet
+        
+      - name: Pod Update
+        run: pod repo update --silent
+        
+      - name: Pod Install
+        run: pod install
+        
+      - name: Clean DerivedData
+        run: |
+          rm -rf ~/Library/Developer/Xcode/DerivedData/
+          mkdir DerivedData
+        
+      - name: Archive
+        run: |
+          set -o pipefail
+          xcodebuild archive -workspace AVIFQuickLook.xcworkspace -scheme AVIFQuickLook -configuration Release -destination "generic/platform=macOS" -archivePath AVIFQuickLook.xcarchive
+          mv AVIFQuickLook.xcarchive/Products/Library/QuickLook/AVIFQuickLook.qlgenerator AVIFQuickLook.qlgenerator
+          mv AVIFQuickLook.xcarchive/dSYMs/AVIFQuickLook.qlgenerator.dSYM AVIFQuickLook.qlgenerator.dSYM
+          zip -r AVIFQuickLook.qlgenerator.zip AVIFQuickLook.qlgenerator
+          zip -r AVIFQuickLook.qlgenerator.dSYM.zip AVIFQuickLook.qlgenerator.dSYM
+
+      - name: Upload Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          artifacts: "AVIFQuickLook.qlgenerator.zip,AVIFQuickLook.qlgenerator.dSYM.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}

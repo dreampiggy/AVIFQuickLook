@@ -1,8 +1,9 @@
 # AVIFQuickLook
 
-![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat) [![Build Status](https://travis-ci.org/dreampiggy/AVIFQuickLook.svg?branch=master)](https://travis-ci.org/dreampiggy/AVIFQuickLook) 
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
+[![Build Status](https://github.com/dreampiggy/AVIFQuickLook/actions/workflows/CI.yml/badge.svg)](https://github.com/dreampiggy/AVIFQuickLook/actions/workflows/CI.yml)
 
-This is the **macOS QuickLook** plugin for [AVIF (AV1 Image File Format)](https://aomediacodec.github.io/av1-avif/).
+This is the **macOS QuickLook** plugin for [AVIF (AV1 Image File Format)](https://aomediacodec.github.io/av1-avif/). Including 10-bit HDR support.
 
 ## Generate Finder thumbnails
 
